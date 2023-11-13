@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="favicon.png" type="image/png">
+    </head>
+<div class="menu">
+  <body>
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </body>
+
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+    <br>
+    <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
+    <br>
+    <label id="phone-label" for="phone">Phone<input id="phone" type="number" pattern="[0-9]+" placeholder="Enter phone number"</label>
+    <br>
+    <label id="number-label" for="number">Age (Optional)<input id="number" type="date"></label>
+    <br>
+    <label for="dropdown">Select County <select id="dropdown">
+      <option>Select one</option>
+      <option>Germany</option>
+      <option>Ghana</option>
+      <option>India</option>
+      <option>Other</option>
+      </select>
+    </label>
+    <br>
+    <label id="gender">Select Gender<label>
+     <label for="male"> <input type="radio" class="inline" id="male" name="gender" value="male" checked> Male </label>
+     <label for="female"> <input type="radio" class="inline" id="female" name="gender" value="female"> Female </label>
+     <label for="other"> <input type="radio" class="inline" id="other" name="gender" value="other"> Other </label>
+     <br>
+  <label id="improve">
+    What are your hobbies? (Check all that apply)
+    </label>
+    <label><input class="inline" type="checkbox" value="Reading"> Reading </label>
+    <label><input class="inline" type="checkbox" value="Sports"> Sports </label>
+    <label><input class="inline" type="checkbox" value="Music"> Music </label>
+    <label><input class="inline" type="checkbox" value="Travel"> Travel </label>
+    <label><input class="inline" type="checkbox" value="Gaming"> Gaming </label>
+    <br>
+      <label for="bio">Any comments or suggestions?
+        <br>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Submit" id="submit"/>
+
+    </fieldset>
+  </form>
+</div>
+</html>

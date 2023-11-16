@@ -5,25 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.png" type="image/png"> 
-        <style>
-            table {
-                border-collapse: collapse;
-                width: auto;
-            }
-        
-            th, td {
-                border: 1px solid black;
-                padding: 8px;
-                text-align: center;
-            }
-        </style>
     </head>
     <body>
-        <table>
-            <caption>TIME TABLE</caption>
+        <table border="1">
             <thead>
                 <tr>
-                    <th rowspan="6" style="text-align: center;">Hours</th>
+                    <th colspan="6" style="text-align: center;">TIME TABLE</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th></th>
                     <th>Mon</th>
                     <th>Tue</th>
                     <th>Wed</th>
@@ -33,15 +25,14 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>10am to 11am</td>
+                    <td rowspan="5" style="text-align: center;">Hours</td>
                     <td>Science</td>
                     <td>Maths</td>
                     <td>Science</td>
                     <td>Maths</td>
                     <td>Arts</td>
                 </tr>
-                <tr>
-                    <td>11am to 12pm</td>
+                <tr>                    
                     <td>Social</td>
                     <td>History</td>
                     <td>English</td>
@@ -49,40 +40,36 @@
                     <td>Sports</td>
                 </tr>
                 <tr>
-                    <td>12pm to 1pm</td>
+                    
                     <td colspan="5" style="text-align: center;">Lunch</td>
                 </tr>
                 <tr>
-                    <td>1pm to 2pm</td>
                     <td>Science</td>
                     <td>Maths</td>
                     <td>Science</td>
                     <td>Maths</td>
-                    <td rowspan="2" style="text-align: center;">Project</td>
+                    <td rowspan="2">Project
+                        <ul type="square">
+                            <li>Renewable Energy Solutions</li>
+                            <li>Coding and Robotics Club</li>
+                            <li>Student Well-being</li>
+                            <li>High School Environmental Awareness Program</li>
+                        </ul></td>
                 </tr>
                 <tr>
-                    <td>2pm to 3pm</td>
+                    
                     <td>Social</td>
-                    <td>History</td>
+                    <td>History
+                        <ol type="a">
+                            <li>World War I</li>
+                            <li>World War II</li>
+                            <li>Berlin Wall</li>
+                        </ol>
+                    </td>
                     <td>English</td>
                     <td>Social</td>
-                    
                 </tr>
             </tbody>
         </table>
-        <h3>Project Topics</h3>
-        <ul>
-            <li>Renewable Energy Solutions</li>
-            <li>Coding and Robotics Club</li>
-            <li>Student Well-being</li>
-            <li>High School Environmental Awareness Program</li>
-        </ul>
-
-        <h3>History Topics</h3>
-        <ol type="a">
-            <li>The American Civil Rights Movement</li>
-            <li>World War II: Causes and Consequences</li>
-            <li>The Renaissance: Art, Science, and Innovation</li>
-        </ol>
     </body>
 </html>

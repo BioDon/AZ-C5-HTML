@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Website Layout">
+    <meta name="keywords" content="HTML, CSS, Flexbox, CSS Grid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+        body{
+            margin: 3%;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Flexbox container for the entire layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100vh;
+        }
+
+        /* Flexbox row for company logo and slogan */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+            height: 10%;
+        }
+
+        /* Flexbox row for header below */
+        .sub-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+            height: 17%;
+        }
+
+        /* CSS Grid row for navigation items */
+        .navigation {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            height: 5%;
+        }
+
+        .navitems {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+        }
+
+        /* CSS Grid row for three columns */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 120px;
+            column-gap: 20px;
+            row-gap: 20px;
+            height: 40%;
+        }
+
+        .subcontent {
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: lightgrey;
+        }
+
+        .item2{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: lightgrey;
+            
+        }
+
+        .item3{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: lightgrey;
+        }
+
+        /* Flexbox row for site plan and copyright info */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+            height: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            company logo and slogan
+        </div>
+        <div class="sub-header">
+            header
+        </div>
+        <div class="navigation">
+            <!-- Navigation items -->
+            <div class="navitems">navigation...</div>
+            <div class="navitems"></div>
+            <div class="navitems"></div>
+            <div class="navitems"></div>
+        </div>
+        <div class="content">
+            <div class="subcontent item1">about</div>
+            <div class="subcontent item2">quick links</div>
+            <div class="subcontent item3">quick links</div>
+        </div>
+        <div class="footer">
+            site plan and copyright info
+        </div>
+    </div>
+</body>
+</html>
